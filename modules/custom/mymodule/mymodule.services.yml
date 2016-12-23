@@ -1,0 +1,3 @@
+services:
+    mymodule.mymodule_dao:
+        class: Drupal\mymodule\libs\MyModuleDao

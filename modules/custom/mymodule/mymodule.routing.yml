@@ -1,0 +1,23 @@
+mymodule.default:
+  path: 'mymodule'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\DefaultController::defaultAction'
+    _title: 'Page My Module'
+  requirements:
+    _permission: 'access content'
+
+mymodule.template:
+  path: 'mymodule/template'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\DefaultController::templateAction'
+    _title: 'Page My Module Template'
+  requirements:
+    _permission: 'access content'
+
+mymodule.another_template:
+  path: 'mymodule/another-template'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\DefaultController::anotherTemplateAction'
+    _title: 'Page My Module Another Template'
+  requirements:
+    _permission: 'access content'

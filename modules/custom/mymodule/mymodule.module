@@ -1,0 +1,20 @@
+<?php	
+
+function mymodule_theme()
+{    
+    $theme['default-page'] = [
+        'template' => 'default-page' // it will look for size-selector-page.html.twig
+    ];
+
+    $theme['another-template'] = [
+    	'template' => 'another-template',
+    	'variables' => array(
+        'param_1' => null,
+        'param_2' => mull,
+        'user_name' => null,
+        'user_lastname' => null
+      ),
+    ];
+ 
+    return $theme;
+}
